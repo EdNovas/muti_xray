@@ -161,7 +161,7 @@ basic_optimization() {
 }
 
 python_requirments() {
-  pip3 install -r requirments.txt
+  pip3 install -r requirments.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
   judge "安装python3 依赖"
 }
 
