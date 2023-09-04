@@ -82,13 +82,16 @@ source '/etc/os-release' ; [[ "${ID}" == "centos" ]] && yum install git -y || ap
 #### 克隆代码
 
 ```bash
-git clone https://github.com/Paper-Dragon/muti_xray.git
+yum install wget -y
+wget https://github.ednovas.xyz/https://github.com/EdNovas/muti_xray/archive/refs/heads/master.zip
+yum install unzip -y
+unzip master.zip
 ```
 
 #### 进入操做系统准备阶段
 
 ```bash
-cd muti_xray && bash prepare.sh run
+cd muti_xray-master && bash prepare.sh run
 ```
 
 #### 安装xray
